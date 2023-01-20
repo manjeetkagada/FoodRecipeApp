@@ -13,7 +13,7 @@ function App() {
   const getRecipes = async () => {
     const results = await axios.get(apiUrl);
     setRecipes(results.data.hits);
-    console.log(results.data.hits);
+    // console.log(results.data.hits);
   };
 
   const submitQuery = (e) => {
